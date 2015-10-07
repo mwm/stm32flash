@@ -38,7 +38,7 @@
 #include "parsers/binary.h"
 #include "parsers/hex.h"
 
-#define VERSION "0.4"
+#define VERSION "0.4.1"
 
 /* device globals */
 stm32_t		*stm		= NULL;
@@ -121,7 +121,7 @@ int main(int argc, char* argv[]) {
 	FILE *diag = stdout;
 
 	fprintf(diag, "stm32flash " VERSION "\n\n");
-	fprintf(diag, "https://github.com/mwm/stm32flash");
+	fprintf(diag, "https://github.com/mwm/stm32flash\n\n");
 	if (parse_options(argc, argv) != 0)
 		goto close;
 
